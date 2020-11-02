@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona virus </title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+    <!--    Geocoder-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+</head>
+<body>
+<section class="showcase">
+    <div class="side-section">
+        <div class="text-content">
+            <h1 id="total-cases"></h1>
+            <p class="under-paragraphs">Total Cases</p>
+            <h1 class="side-content counter" id="deaths"></h1>
+            <p class="under-paragraphs">Deaths</p>
+            <h1 class="side-content counter" id="recoveries"></h1>
+            <p class="under-paragraphs">Recoveries</p>
+            <p id="unavailable">Some data is unavailable</p>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <div id='map'></div>
+    </div>
+</section>
+
+<script src="fetch-API.js"></script>
+</body>
+</html>

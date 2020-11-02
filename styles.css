@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+}
+
+/* Map */
+.map-container {
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  Side Section */
+.side-section {
+    width: 400px;
+    height: 100vh;
+    background: #f3f3f3;
+    position: relative;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#total-cases {
+    margin-top: 6rem;
+    color: red;
+    font-size: 3.5rem;
+}
+
+.side-content {
+    margin: 4rem 0 0 0;
+}
+
+.under-paragraphs {
+    color: grey;
+    text-transform: uppercase;
+}
+
+#deaths, #recoveries, #total-cases {
+    transition: color 0.5s ease;
+    cursor: default;
+}
+
+#deaths:hover {
+    color: #9e3aff;
+}
+
+#recoveries:hover {
+    color: #13be03;
+}
+
+#total-cases:hover {
+    color: #b50404;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.close-btn i {
+    position: absolute;
+    top: 1.1rem;
+    right: 0.85rem;
+    cursor: pointer;
+}
+
+#unavailable {
+    font-style: italic;
+    margin-top: 17rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 780px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .side-section {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #total-cases {
+        margin-top: 2rem;
+    }
+
+    .map-container {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #unavailable {
+        margin-top: 3rem;
+    }
+}
